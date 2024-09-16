@@ -1,0 +1,20 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>{{ complaint.title }}</h1>
+  <p>{{ complaint.description }}</p>
+  
+  <h2>Comments</h2>
+  <ul>
+    {% for comment in comments %}
+      <li>{{ comment.text }} - {{ comment.user if not comment.anonymous else 'Anonymous' }}</li>
+    {% endfor %}
+  </ul>
+
+  <h3>Add a Comment</h3>
+  <form method="post">
+    {% csrf_token %}
+    {{ comment_form.as_p }}
+    <button type="submit">Post Comment</button>
+  </form>
+{% endblock %}

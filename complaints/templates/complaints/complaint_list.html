@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Complaints</h1>
+  <ul>
+    {% for complaint in complaints %}
+      <li><a href="{% url 'complaint_detail' complaint.pk %}">{{ complaint.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'complaint_create' %}">Submit a Complaint</a>
+{% endblock %}
