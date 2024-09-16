@@ -89,9 +89,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'ventitnow',
-        'USER': 'postgres',
-        'PASSWORD': 'dOE~574l.8hM',
-        'HOST': 'localhost',
+        'USER': 'postgress',
+        'PASSWORD': 'kyfoEabzoB0nZ8dWwfMnNtfO40BghQDr',
+        'HOST': 'dpg-crjrabaj1k6c73fonnng-a.oregon-postgres.render.com',
         'PORT': '5432',
     }
 }
