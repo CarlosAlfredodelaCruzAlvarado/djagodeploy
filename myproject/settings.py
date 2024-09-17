@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-24s&m@8^v$6cejf(pgouowb&u2z1op#=2c&so1+)_*j%p(nk$n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'djagodeploy.onrender.com']
 
 
 
