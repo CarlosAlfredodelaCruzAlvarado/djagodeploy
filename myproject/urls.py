@@ -2,7 +2,7 @@
 
 from django.contrib import admin
 from django.urls import path, include
-from complaints.views import ComplaintList
+#from complaints.views import ComplaintList
 
 
 urlpatterns = [
